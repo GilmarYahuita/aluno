@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Souza — Desenvolvedora Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark">
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo">
+        <span class="logo-bracket">&lt;</span>Ana<span class="logo-accent">Souza</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#inicio"    class="nav__link" data-section="inicio">Início</a>
+        <a href="#sobre"     class="nav__link" data-section="sobre">Sobre</a>
+        <a href="#habilidades" class="nav__link" data-section="habilidades">Habilidades</a>
+        <a href="#projetos"  class="nav__link" data-section="projetos">Projetos</a>
+        <a href="#contato"   class="nav__link" data-section="contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-theme" id="btnTheme" aria-label="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="btn-hamburger" id="btnHamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content animate-on-scroll">
+          <p class="hero__greeting">Olá, eu sou</p>
+          <h1 class="hero__name">Ana Souza</h1>
+          <h2 class="hero__role">Desenvolvedora <span class="text-accent">Full Stack</span></h2>
+          <p class="hero__tagline">Transformo ideias em experiências digitais memoráveis, do back-end ao front-end.</p>
+          <div class="hero__btns">
+            <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn--outline">Contato</a>
+          </div>
+        </div>
+        <div class="hero__avatar animate-on-scroll delay-1">
+          <div class="avatar-wrapper">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar-svg" aria-hidden="true">
+              <circle cx="100" cy="100" r="100" fill="var(--color-accent-muted)"/>
+              <circle cx="100" cy="80" r="34" fill="var(--color-accent)"/>
+              <ellipse cx="100" cy="160" rx="52" ry="40" fill="var(--color-accent)"/>
+              <circle cx="100" cy="80" r="28" fill="var(--color-accent-light)"/>
+              <circle cx="89"  cy="76" r="4"  fill="var(--color-bg)"/>
+              <circle cx="111" cy="76" r="4"  fill="var(--color-bg)"/>
+              <path d="M88 90 Q100 100 112 90" stroke="var(--color-bg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+            <div class="avatar-ring"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>role</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll">Sobre <span class="text-accent">Mim</span></h2>
+        <div class="sobre__grid">
+          <div class="sobre__text animate-on-scroll">
+            <p>
+              Sou desenvolvedora full stack com mais de 5 anos de experiência criando soluções web robustas e escaláveis.
+              Apaixonada por código limpo, boas práticas e por transformar problemas complexos em interfaces simples e intuitivas.
+            </p>
+            <p>
+              Trabalho com JavaScript de ponta a ponta — React no front e Node.js no back — mas também me aventuro em Python
+              para automações e análise de dados. Acredito que um bom software começa com uma boa conversa.
+            </p>
+            <div class="sobre__stats">
+              <div class="stat">
+                <span class="stat__number">5+</span>
+                <span class="stat__label">Anos de experiência</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">40+</span>
+                <span class="stat__label">Projetos entregues</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">12+</span>
+                <span class="stat__label">Clientes satisfeitos</span>
+              </div>
+            </div>
+          </div>
+          <div class="sobre__card-wrap animate-on-scroll delay-1">
+            <div class="sobre__card">
+              <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg" class="sobre__avatar" aria-hidden="true">
+                <rect width="160" height="180" rx="16" fill="var(--color-accent-muted)"/>
+                <circle cx="80" cy="68" r="36" fill="var(--color-surface)"/>
+                <circle cx="80" cy="68" r="28" fill="var(--color-accent-light)"/>
+                <circle cx="70" cy="63" r="5" fill="var(--color-bg)"/>
+                <circle cx="90" cy="63" r="5" fill="var(--color-bg)"/>
+                <path d="M68 78 Q80 90 92 78" stroke="var(--color-bg)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <ellipse cx="80" cy="148" rx="44" ry="36" fill="var(--color-surface)"/>
+                <rect x="52" y="108" width="56" height="6" rx="3" fill="var(--color-accent)"/>
+              </svg>
+              <div class="sobre__card-info">
+                <h3>Ana Souza</h3>
+                <p>Full Stack Developer</p>
+                <p class="sobre__location">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  São Paulo, Brasil
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section habilidades" id="habilidades">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll">Minhas <span class="text-accent">Habilidades</span></h2>
+        <div class="skills__grid">
+
+          <div class="skill-card animate-on-scroll">
+            <div class="skill-card__icon" style="--icon-color:#e34f26">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M5 3l1.765 20.093L16 26l9.234-2.907L27 3zm18.33 6H10.34l.327 3.725H24l-.996 11.12L16 25.69l-6.997-1.847-.485-5.38h3.682l.245 2.78L16 22.14l3.556-.898.37-4.125H9.556L8.554 9z"/></svg>
+            </div>
+            <span class="skill-card__name">HTML</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="95"></div></div>
+            <span class="skill-card__pct">95%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll delay-1">
+            <div class="skill-card__icon" style="--icon-color:#264de4">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M5 3l1.765 20.093L16 26l9.234-2.907L27 3zm17.994 6.28l-.39 4.424H11.716l.326 3.668H22.34l-1.168 12.88L16 31.04l-5.17-1.4-1.03-10.8h3.68l.51 5.38 2.01.54 2.015-.54.65-6.66H9.42L8.006 9.28z"/></svg>
+            </div>
+            <span class="skill-card__name">CSS</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="90"></div></div>
+            <span class="skill-card__pct">90%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll delay-2">
+            <div class="skill-card__icon" style="--icon-color:#f7df1e">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M2 2h28v28H2zm14.1 21.3c.5.9 1 1.6 2.2 1.6 1.1 0 1.7-.5 1.7-1.3 0-.9-.7-1.2-1.8-1.8l-.6-.3c-1.8-.8-3-1.7-3-3.7 0-1.9 1.4-3.3 3.6-3.3 1.6 0 2.7.5 3.5 2l-1.9 1.2c-.4-.8-.9-1.1-1.6-1.1-.7 0-1.2.5-1.2 1.1 0 .8.5 1.1 1.6 1.6l.6.3c2.1.9 3.3 1.8 3.3 3.9 0 2.2-1.7 3.5-4 3.5-2.2 0-3.7-1.1-4.4-2.5zm-8.1.2c.4.7.7 1.3 1.5 1.3.8 0 1.2-.3 1.2-1.5v-8h2.4v8c0 2.5-1.5 3.6-3.6 3.6-1.9 0-3.1-1-3.7-2.2z"/></svg>
+            </div>
+            <span class="skill-card__name">JavaScript</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="88"></div></div>
+            <span class="skill-card__pct">88%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll">
+            <div class="skill-card__icon" style="--icon-color:#68a063">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M15.9.8C7.6.8.8 7.6.8 15.9c0 8.3 6.8 15.1 15.1 15.1 8.3 0 15.1-6.8 15.1-15.1C31 7.6 24.2.8 15.9.8zm6.4 9.7h-3.1c-.3 0-.6.2-.7.5L16 18.8l-2.5-7.8c-.1-.3-.4-.5-.7-.5H9.7c-.3 0-.6.3-.6.6 0 .1 0 .2.1.3l4.4 11.3-.5 1.3c-.3.7-.7 1.2-1.5 1.2-.5 0-.9-.2-1.3-.4l-.7 1.8c.6.4 1.3.6 2 .6 1.8 0 3.1-.9 3.8-2.6l5-12.9c0-.2.1-.3.1-.4 0-.3-.3-.6-.6-.6z"/></svg>
+            </div>
+            <span class="skill-card__name">Node.js</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="82"></div></div>
+            <span class="skill-card__pct">82%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll delay-1">
+            <div class="skill-card__icon" style="--icon-color:#3776ab">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M15.89 2.37a1.6 1.6 0 0 0-.55.1L5.16 6.3a1.6 1.6 0 0 0-1.04 1.51v8.4c0 5.2 3.42 10.07 8.64 12.55l2.41 1.16a1.6 1.6 0 0 0 1.42 0l2.41-1.16c5.22-2.48 8.64-7.35 8.64-12.55V7.81a1.6 1.6 0 0 0-1.04-1.51L16.45 2.47a1.6 1.6 0 0 0-.56-.1zm.11 4.88c3.47 0 6.28 2.81 6.28 6.28S19.47 19.8 16 19.8s-6.28-2.81-6.28-6.28 2.81-6.27 6.28-6.27zm0 2.4a3.88 3.88 0 1 0 0 7.76 3.88 3.88 0 0 0 0-7.76z"/></svg>
+            </div>
+            <span class="skill-card__name">Python</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="75"></div></div>
+            <span class="skill-card__pct">75%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll delay-2">
+            <div class="skill-card__icon" style="--icon-color:#2496ed">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.04 4C10 4 6.73 6.93 5.44 12.8c1.93-2.57 4.18-3.54 6.76-2.89.74.18 1.26.72 1.85 1.32C15.01 12.21 16.64 14 20.28 14c3.36 0 5.73-2.19 6.4-4.32C25.62 5.66 21.61 4 16.04 4zM9.68 14c-3.36 0-5.73 2.19-6.4 4.32C4.38 22.34 8.39 24 13.96 24c6.04 0 9.31-2.93 10.6-8.8-1.93 2.57-4.18 3.54-6.76 2.89-.74-.18-1.26-.72-1.85-1.32C14.99 15.79 13.36 14 9.68 14z"/></svg>
+            </div>
+            <span class="skill-card__name">Docker</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="78"></div></div>
+            <span class="skill-card__pct">78%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll">
+            <div class="skill-card__icon" style="--icon-color:#f05030">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M29.47 13.67L18.33 2.53a1.82 1.82 0 0 0-2.58 0L13.3 4.98l3.27 3.27a2.16 2.16 0 0 1 2.73 2.75l3.15 3.15a2.16 2.16 0 1 1-1.3 1.22l-2.94-2.94v7.73a2.16 2.16 0 1 1-1.77-.06V12.1a2.16 2.16 0 0 1-1.17-2.84L11.99 6.02 2.53 15.48a1.82 1.82 0 0 0 0 2.58l11.14 11.14a1.82 1.82 0 0 0 2.58 0l13.22-13.22a1.82 1.82 0 0 0 0-2.31z"/></svg>
+            </div>
+            <span class="skill-card__name">Git</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="91"></div></div>
+            <span class="skill-card__pct">91%</span>
+          </div>
+
+          <div class="skill-card animate-on-scroll delay-1">
+            <div class="skill-card__icon" style="--icon-color:#336791">
+              <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C8.82 3 3 8.82 3 16c0 5.94 3.88 10.99 9.28 12.73-.13-1.1-.24-2.8.05-4 .26-1.07 1.72-7.28 1.72-7.28s-.44-.88-.44-2.18c0-2.04 1.18-3.57 2.65-3.57 1.25 0 1.85.94 1.85 2.06 0 1.26-.8 3.14-1.21 4.88-.35 1.46.72 2.64 2.14 2.64 2.56 0 4.54-2.7 4.54-6.6 0-3.45-2.48-5.86-6.02-5.86-4.1 0-6.5 3.07-6.5 6.25 0 1.24.48 2.56 1.07 3.28.12.14.13.27.1.42-.11.45-.35 1.46-.4 1.66-.06.27-.2.32-.47.19-1.75-.82-2.85-3.38-2.85-5.44 0-4.43 3.22-8.5 9.28-8.5 4.87 0 8.66 3.47 8.66 8.1 0 4.84-3.05 8.73-7.27 8.73-1.42 0-2.76-.74-3.22-1.61l-.87 3.27c-.32 1.22-1.17 2.74-1.74 3.67C13.96 28.94 14.96 29 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3z"/></svg>
+            </div>
+            <span class="skill-card__name">SQL</span>
+            <div class="skill-card__bar"><div class="skill-card__fill" data-width="80"></div></div>
+            <span class="skill-card__pct">80%</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section projetos" id="projetos">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll">Meus <span class="text-accent">Projetos</span></h2>
+        <div class="projetos__filters animate-on-scroll">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Front-end</button>
+          <button class="filter-btn" data-filter="backend">Back-end</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div class="projetos__grid" id="projectsGrid">
+
+          <div class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-card__header" style="--card-color:#7c3aed">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <rect x="4" y="8" width="40" height="28" rx="3"/><line x1="16" y1="44" x2="32" y2="44"/><line x1="12" y1="44" x2="36" y2="44"/>
+                <polyline points="18 24 22 28 30 20"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>TaskFlow Dashboard</h3>
+              <p>Painel de gerenciamento de tarefas com drag-and-drop, filtros avançados e gráficos de produtividade.</p>
+              <div class="project-card__tags">
+                <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">CSS Modules</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-1" data-category="backend">
+            <div class="project-card__header" style="--card-color:#059669">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <path d="M20 8H8a2 2 0 0 0-2 2v28a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V20"/><polyline points="28 8 40 8 40 20"/>
+                <line x1="40" y1="8" x2="24" y2="24"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>ShopAPI REST</h3>
+              <p>API RESTful completa para e-commerce com autenticação JWT, carrinho, pedidos e integração de pagamento.</p>
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-2" data-category="mobile">
+            <div class="project-card__header" style="--card-color:#d97706">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <rect x="14" y="4" width="20" height="40" rx="4"/><line x1="24" y1="36" x2="24" y2="36" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>FinTrack Mobile</h3>
+              <p>Aplicativo de controle financeiro pessoal com categorias, metas de economia e relatórios mensais.</p>
+              <div class="project-card__tags">
+                <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">SQLite</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll" data-category="frontend">
+            <div class="project-card__header" style="--card-color:#db2777">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <circle cx="24" cy="24" r="18"/><polyline points="24 12 24 24 30 30"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>EventHub Web</h3>
+              <p>Plataforma de descoberta e agendamento de eventos locais com mapa interativo e sistema de ingressos.</p>
+              <div class="project-card__tags">
+                <span class="tag">Vue.js</span><span class="tag">Leaflet</span><span class="tag">Tailwind</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-1" data-category="backend">
+            <div class="project-card__header" style="--card-color:#0891b2">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <ellipse cx="24" cy="14" rx="18" ry="6"/><path d="M6 14v8c0 3.31 8.06 6 18 6s18-2.69 18-6v-8"/>
+                <path d="M6 22v8c0 3.31 8.06 6 18 6s18-2.69 18-6v-8"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>DataSync Service</h3>
+              <p>Microsserviço de sincronização de dados entre múltiplos bancos com filas, retries e dead-letter queue.</p>
+              <div class="project-card__tags">
+                <span class="tag">Python</span><span class="tag">Redis</span><span class="tag">Docker</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-2" data-category="mobile">
+            <div class="project-card__header" style="--card-color:#7c3aed">
+              <svg viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="project-card__icon">
+                <path d="M8 14h32M8 24h20M8 34h14"/><rect x="28" y="22" width="16" height="20" rx="2"/>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <h3>ReadMe App</h3>
+              <p>App de leitura de artigos com modo offline, estimativa de tempo, marcadores e listas de leitura.</p>
+              <div class="project-card__tags">
+                <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Hive</span>
+              </div>
+            </div>
+            <div class="project-card__footer">
+              <a href="#" class="btn btn--sm btn--primary">Demo</a>
+              <a href="#" class="btn btn--sm btn--outline">Código</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contato" id="contato">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll">Entre em <span class="text-accent">Contato</span></h2>
+        <div class="contato__grid">
+          <div class="contato__info animate-on-scroll">
+            <p>Tem um projeto em mente ou quer bater um papo sobre tecnologia? Manda uma mensagem — responderei em até 24h!</p>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                ana@anasouza.dev
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                São Paulo, SP — Brasil
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Disponível para freelas e CLT
+              </li>
+            </ul>
+          </div>
+          <form class="contato__form animate-on-scroll delay-1" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome completo" autocomplete="name" />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Conte-me sobre seu projeto..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Mensagem enviada com sucesso! Entrarei em contato em breve.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">
+        &copy; <span id="footerYear"></span> Ana Souza. Feito com
+        <svg viewBox="0 0 24 24" fill="var(--color-accent)" width="14" height="14" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        e muito café.
+      </p>
+      <p class="footer__version">Versão: 1.0.0</p>
+      <div class="footer__socials">
+        <!-- GitHub -->
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <!-- Twitter/X -->
+        <a href="#" class="social-link" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
