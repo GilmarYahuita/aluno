@@ -1,4 +1,4 @@
-# Portfólio — Ana Souza
+# Portfólio — Luiz Souza
 
 Site de portfólio pessoal estático, servido por Nginx via Docker. Utilizado como projeto de demonstração de CI/CD com GitHub Actions + Railway.
 
